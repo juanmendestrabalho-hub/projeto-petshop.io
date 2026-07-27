@@ -1,1 +1,37 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Produtos</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Produtos</h1>
+</header>
+
+<div class="produtos">
+
+    <div class="card">
+        <h3>Ração Premium</h3>
+        <p>R$ 120</p>
+        <button onclick="addCarrinho('Ração Premium',120)">Adicionar</button>
+    </div>
+
+    <div class="card">
+        <h3>Brinquedo</h3>
+        <p>R$ 30</p>
+        <button onclick="addCarrinho('Brinquedo',30)">Adicionar</button>
+    </div>
+
+</div>
+
+<h2>Carrinho</h2>
+<ul id="carrinho"></ul>
+<p>Total: R$ <span id="total">0</span></p>
+
+<script src="js/carrinho.js"></script>
+</body>
+</html>
